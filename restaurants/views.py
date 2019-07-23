@@ -15,3 +15,5 @@ def restaurant_detail(request, restaurant_id):
         "restaurant": Restaurant.objects.get(id = restaurant_id),
     }
     return render(request, 'detail.html', context)
+
+
