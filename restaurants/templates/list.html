@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <title>List</title>
     </head>
-    <body>
+    <body style="background: lavender; color: navy;">
         {% for restaurant in restaurants %}
-            <a href="../detail/{{restaurant.id}}">
+            <a href="{% url 'restaurant-detail' restaurant.id %}">
                 <ul>
-                    <li>{{restaurant.name}}</li>
+                    <li><h3>{{restaurant.name}}</h3></li>
                     <li>{{restaurant.description}}</li>
 
                 </ul>
